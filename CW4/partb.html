@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Memory Matching Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav>
+        <a href="parta.html">Part A</a>
+        <a href="partb.html">Part B</a>
+    </nav>
+
+    <h1>Memory Matching Game</h1>
+
+    <!-- SETTINGS PANEL -->
+    <div id="settings">
+        <div>
+            <label>Pairs</label><br>
+            <select id="pairs">
+                <option value="8">8</option>
+                <option value="10">10</option>
+                <option value="12" selected>12</option>
+            </select>
+        </div>
+
+        <div>
+            <label>Difficulty</label><br>
+            <select id="difficulty">
+                <option value="8000">Easy (80s)</option>
+                <option value="5000" selected>Medium (50s)</option>
+                <option value="3000">Hard (30s)</option>
+            </select>
+        </div>
+
+        <button onclick="startGame()">START GAME</button>
+    </div>
+
+    <!-- STATS -->
+    <div id="Stats">
+        <div>Time: <span id="timer">0</span>ms</div>
+        <div>Matches: <span id="matches">0</span></div>
+    </div>
+
+    <!-- MESSAGE -->
+    <div id="Message"></div>
+
+    <!-- GAME BOARD -->
+    <div id="gameBoard"></div>
+
+    <script src="partb.js"></script>
+</body>
+</html>

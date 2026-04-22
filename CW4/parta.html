@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Number Guessing Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav>
+        <a href="parta.html">Part A</a>
+        <a href="partb.html">Part B</a>
+    </nav>
+
+    <h1>Number Guessing Game</h1>
+    <br>
+
+    <p>Guess a number between 1 and 100:</p>
+    <br>
+
+    <!-- SETTINGS (Clock + Sound Status) -->
+    <div id="settings">
+        <p id="Clock">Time: --:--:--</p>
+        <!-- SOUND ELEMENT -->
+        <p id="Sound" style="cursor: pointer;"><audio id="guessSound" src="assets/sound.mp3"></audio>Sound: On 🔊</p>
+    </div>
+
+    <!-- GAME FORM -->
+    <form action="">
+        <p>
+            <input type="number" id="UserGuess" placeholder="Enter your guess..." />
+            <button id="Guess" type="submit">Guess</button>
+        </p>
+    </form>
+
+    <!-- MESSAGE DISPLAY -->
+    <p id="Message"></p>
+
+    <!-- STATS -->
+    <div id="Stats">
+        <p id="GuessLeft">Guesses Left</p>
+        <p id="Wins">Wins</p>
+        <p id="Round">Rounds</p>
+    </div>
+
+    
+
+    <script src="parta.js"></script>
+</body>
+</html>
